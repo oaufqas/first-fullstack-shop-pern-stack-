@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css');
+
+* {
+    font-family: 'Arial', 'Helvetica', 'Open Sans', 'sans-serif', 'FontAwesome';
+}
+
+.container {
+    min-height: 100vh;
+    padding: 40px 0;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.wrapper {
+    position: relative;
+    width: 320px;
+}
+
+.alert {
+    position: absolute;
+    top: -80px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    background: rgba(230, 201, 168, 0.1);
+    border: 1px solid rgba(230, 201, 168, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    color: #e6c9a8;
+}
+
+.signin {
+    height: 90px;
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.signin::before {
+    display: block;
+    position: relative;
+    height: 2px;
+    background: rgba(230, 201, 168, 0.3);
+    content: '';
+    top: 44px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.signin input:first-of-type {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border: 1px solid rgba(230, 201, 168, 0.3);
+}
+
+.signin input:last-of-type {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border: 1px solid rgba(230, 201, 168, 0.3);
+    border-top: none;
+}
+
+.signin input[type="email"],
+.signin input[type="password"],
+.signin button[type="submit"] {
+    background: #2a2a2a;
+    box-shadow: inset -100px -100px 0 #2a2a2a;
+    color: #e8e0d5;
+}
+
+.signin input[type="email"],
+.signin input[type="password"] {
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 45px;
+    border: 0;
+    outline: 0;
+    top: -2px;
+    padding: 0 0 0 20px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.signin input[type="email"]:focus,
+.signin input[type="password"]:focus {
+    color: #ffffff;
+    border-color: #e6c9a8 !important;
+    box-shadow: 0 0 0 2px rgba(230, 201, 168, 0.2);
+}
+
+.signin input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.signin button[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    color: #e6c9a8;
+    border-radius: 50px;
+    outline: 0;
+    z-index: 2;
+    top: 19px;
+    right: -24px;
+    border: 6px solid #2a2a2a;
+    font-size: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: #e6c9a8 !important;
+}
+
+.signin button[type="submit"]:hover:not(:disabled) {
+    color: #1a1a1a;
+    text-shadow: 0 0 10px rgba(26, 26, 26, 0.3);
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(230, 201, 168, 0.3);
+}
+
+.signin button[type="submit"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.signin p {
+    color: #e6c9a8;
+    padding: 0 20px;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 5px 0 0 0;
+}
+
+.signin p > a {
+    color: #e6c9a8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.signin p > a:hover {
+    color: #f0dcc5;
+    border-bottom: 1px solid #f0dcc5;
+}
+
+.testAccounts {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(230, 201, 168, 0.05);
+    border-radius: 8px;
+    color: #e8e0d5;
+    font-size: 12px;
+    border: 1px solid rgba(230, 201, 168, 0.1);
+}
+
+.testAccounts h6 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.testAccounts p {
+    margin: 5px 0;
+    font-size: 11px;
+    color: #e6c9a8;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 280px;
+    }
+    
+    .signin {
+        width: 260px;
+    }
+    
+    .signin input[type="email"],
+    .signin input[type="password"] {
+        width: 240px;
+    }
+    
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert {
+    animation: fadeIn 0.3s ease;
+}
+
+
+.signin button[type="submit"] i {
+    color: #1a1a1a;
+}
+
+.signin button[type="submit"]:hover:not(:disabled) i {
+    color: #1a1a1a;
+}
