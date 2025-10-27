@@ -8,7 +8,7 @@ export const createType = async (type) => {
 
 
 export const getTypes = async () => {
-    const {data} = await $host.get('type/')
+    const {data} = await $host.get('/api/type/')
     return data
 }
 
