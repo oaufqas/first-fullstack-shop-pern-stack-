@@ -1,7 +1,7 @@
 Full-stack интернет-магазин на Node.js + React + PostgreSQL
 
 - **Бэкенд:** Node.js, Express, Sequelize, JWT
-- **Фронтенд:** React, Vite, CSS
+- **Фронтенд:** React, Vite, CSS, MobX, Axios
 - **База данных:** PostgreSQL
 - **Хостинг:** Timeweb Cloud
 

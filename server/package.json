@@ -24,7 +24,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node index.js"
+    "start": "cd ../client && npm run build && cd ../server && node index.js"
   },
   "author": "",
   "license": "ISC",
