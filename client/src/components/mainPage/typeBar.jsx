@@ -33,7 +33,7 @@ const TypeBar = observer(() => {
                         {!imageErrors[type.id] ? (
                             <Card.Img
                                 variant="top" 
-                                src={import.meta.env.VITE_STATIC_URL + 'static/' + type.img} 
+                                src={import.meta.env.VITE_STATIC_URL + type.img} 
                                 alt={type.name}
                                 className="typebarImage"
                                 onError={() => handleImageError(type.id)}
