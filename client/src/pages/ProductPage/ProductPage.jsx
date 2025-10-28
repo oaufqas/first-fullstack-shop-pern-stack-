@@ -102,7 +102,7 @@ const ProductPage = observer(() => {
                 <Col lg={6} className={styles.imageColumn}>
                     <div className={styles.imageContainer}>
                         <Image 
-                            src={import.meta.env.VITE_STATIC_URL + 'static/' + currentProduct.img}
+                            src={import.meta.env.VITE_STATIC_URL + currentProduct.img}
                             alt={currentProduct.name}
                             className={styles.productImage}
                         />

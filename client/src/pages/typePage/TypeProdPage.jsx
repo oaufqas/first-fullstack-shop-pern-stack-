@@ -101,7 +101,7 @@ const ProductCard = observer(() => {
                                 <div className={styles.productImageContainer}>
                                     <Card.Img
                                         variant="top"
-                                        src={import.meta.env.VITE_STATIC_URL + 'static/' + productItem.img}
+                                        src={import.meta.env.VITE_STATIC_URL + productItem.img}
                                         alt={productItem.name}
                                         className={styles.productImage}
                                     />

@@ -109,7 +109,7 @@ const BasketPage = observer(() => {
                                         <div 
                                             className={styles.productImage}
                                             style={{ 
-                                                backgroundImage: `url(${import.meta.env.VITE_STATIC_URL + 'static/' + item.Product.img})`,
+                                                backgroundImage: `url(${import.meta.env.VITE_STATIC_URL + item.Product.img})`,
                                                 backgroundSize: 'cover',
                                                 backgroundPosition: 'center'
                                             }}
