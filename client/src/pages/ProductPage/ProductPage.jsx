@@ -236,14 +236,13 @@ const ProductPage = observer(() => {
 
                 <div className={styles.contactSection}>
                     <div className={styles.contactItem}>
-                        <strong>Телефон:</strong> +7 999 999 9999
+                        <strong>Телефон:</strong> +7 919 546 1353
                     </div>
                     <div className={styles.contactItem}>
-                        <strong>Email:</strong> email@gmail.com
+                        <strong>Email:</strong> brusbazhenov@yandex.ru
                     </div>
                     <div className={styles.contactItem}>
-                        <strong>Адрес:</strong> ---
-                        {/* <strong>Адрес:</strong> Волгоград, Советский район, ул ​25 лет Октября, 1 ст194, 1 этаж */}
+                        <strong>Адрес:</strong> Волгоград, Советский район, ул ​25 лет Октября, 1 ст194, 1 этаж
                     </div>
                 </div>
             </Col>

@@ -3,8 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import InterMap from '../InterMap';
 
 const ContactsSection = () => {
-    const shopAddress = "---";
-    // const shopAddress = "Волгоград, Советский район, ул ​25 лет Октября, 1 ст194, 1 этаж";
+    const shopAddress = "Волгоград, Советский район, ул ​25 лет Октября, 1 ст194, 1 этаж";
 
     return (
         <section id="contacts" className="contacts-section">
@@ -15,15 +14,15 @@ const ContactsSection = () => {
                         <div className="contact-info">
                             <div className="contact-item">
                                 <h4>Телефон</h4>
-                                <a href="tel:+79999999999" className="contact-link">
-                                    +7 999 999 9999
+                                <a href="tel:+79195461353" className="contact-link">
+                                    +7 919 546 1353
                                 </a>
                             </div>
                             
                             <div className="contact-item">
                                 <h4>Почта</h4>
-                                <a href="mailto:ggvasyr@gmail.com" className="contact-link">
-                                    email@gmail.com
+                                <a href="mailto:brusbazhenov@yandex.ru" className="contact-link">
+                                    brusbazhenov@yandex.ru
                                 </a>
                             </div>
                             
